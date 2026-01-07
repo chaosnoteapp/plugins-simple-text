@@ -10,12 +10,13 @@ version = "1.0-SNAPSHOT"
 
 repositories {
     mavenLocal()
+    maven { url 'https://jitpack.io' }
     google()
     mavenCentral()
 }
 
 dependencies {
-    implementation("com.chaosnote:api:1.0")
+    implementation("com.github.chaosnoteapp:chaosnote-api:v0.1.0")
 
     implementation(compose.runtime)
     implementation(compose.foundation)
