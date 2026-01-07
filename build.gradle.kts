@@ -10,7 +10,7 @@ version = "1.0-SNAPSHOT"
 
 repositories {
     mavenLocal()
-    maven { url 'https://jitpack.io' }
+    maven("https://jitpack.io")
     google()
     mavenCentral()
 }
