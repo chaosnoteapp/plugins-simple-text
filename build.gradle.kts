@@ -38,7 +38,7 @@ kotlin {
 
 val copyPluginJar by tasks.registering(Copy::class) {
     dependsOn("jar") // спершу збираємо JAR
-    val pluginOutputDir = file("C:\\Users\\Anastasiia\\workspaces\\ChaosNote-Desktop\\composeApp\\plugins") // зміни на свою папку
+    val pluginOutputDir = file("C:\\Users\\Anastasiia\\AppData\\Roaming\\Chaosnote\\plugins")
     from(tasks.named("jar")) {
         // джарка, яку згенерує task 'jar'
     }
