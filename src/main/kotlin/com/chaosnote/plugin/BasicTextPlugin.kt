@@ -11,8 +11,10 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.dp
 import com.chaosnote.api.block.BlockHandle
 import com.chaosnote.api.block.BlockPlugin
+import com.google.auto.service.AutoService
 import kotlinx.coroutines.flow.debounce
 
+@AutoService(BlockPlugin::class)
 class BasicTextPlugin: BlockPlugin {
 
     override val type: String = "com.chaosnote.plugin.BasicTextPlugin"

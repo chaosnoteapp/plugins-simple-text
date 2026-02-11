@@ -3,6 +3,7 @@ plugins {
 
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
+    id("com.google.devtools.ksp") version "2.3.5"
 }
 
 group = "com.chaosnote"
@@ -25,6 +26,9 @@ dependencies {
     implementation(compose.ui)
     implementation(compose.components.resources)
     implementation(compose.components.uiToolingPreview)
+
+    implementation("com.google.auto.service:auto-service-annotations:1.1.1")
+    ksp("dev.zacsweers.autoservice:auto-service-ksp:1.2.0")
 
     testImplementation(kotlin("test"))
 }
